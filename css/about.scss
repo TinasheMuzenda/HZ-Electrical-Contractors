@@ -1,0 +1,95 @@
+@font-face {
+    font-family: roboto;
+    src: url('../font/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: DIN;
+    src: url('../font/DIN-Condensed-Regular.otf');
+}
+
+:root{
+    --primary-color: #ffffff;
+    --secondary-color: #000000;
+    --main-color: #7ac943;
+    --sub-color: #3fa9f5;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+span{
+    color: var(--main-color);
+}
+
+.moreAbout{
+    .container{
+        .back{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5px;
+            cursor: pointer;
+    
+            a{
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+                font-family: 'DIN',  sans-serif;
+    
+                .backImage{
+                    height: 1.2rem;
+                    margin-bottom: 2px;
+                }
+            }
+    
+            .logo{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                img{
+                    width: 3rem;
+                }
+                a{
+                    text-decoration: none;
+                    color: var(--secondary-color);
+                    line-height: 16px;
+                    font-weight: 550;
+                    font-family: 'DIN',  sans-serif;
+                }
+            }
+        }
+    
+        h1{
+            text-align: center;
+        }
+        .row{
+            padding: 3rem;
+            .left{
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                .mission{
+                    width: 20rem;
+                }
+            }
+
+            .right{
+                .container{
+                    
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

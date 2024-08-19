@@ -1,0 +1,189 @@
+@font-face {
+    font-family: roboto;
+    src: url('../font/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: DIN;
+    src: url('../font/DIN-Condensed-Regular.otf');
+}
+
+:root{
+    --primary-color: #ffffff;
+    --secondary-color: #000000;
+    --main-color: #7ac943;
+    --sub-color: #3fa9f5;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+span{
+    color: var(--main-color);
+}
+
+#projects{
+    .back{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+        padding: 0 5%;
+
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            font-family: 'DIN',  sans-serif;
+
+            .backImage{
+                height: 1.2rem;
+                margin-bottom: 2px;
+            }
+        }
+
+        .logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            img{
+                width: 3rem;
+            }
+            a{
+                text-decoration: none;
+                color: var(--secondary-color);
+                line-height: 16px;
+                font-weight: 550;
+                font-family: 'DIN',  sans-serif;
+            }
+        }
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .projectList{
+        .row{
+            .projectHolder{
+                width: 100%;
+                height: auto;
+                margin-top: 1rem;
+
+                .projectCard{
+                    background-color: dimgray;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-blend-mode: multiply;
+                    height: 70vh;
+                    display: flex;
+                    align-items: end;
+
+                    .overlay{
+                        background: rgba(0, 0, 0,);
+                        width: 100%;
+                        height: 24%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        opacity: .5;
+                        
+                        p{
+                            color: white;
+                            z-index: 2;
+                        }
+                    }
+                }
+                .first{
+                    background-image: url('../images/project1.jpg');
+                }
+                .second{
+                    background-image: url('../images/project2.jpg');
+                }
+                .third{
+                    background-image: url('../images/project3.jpg');
+                }
+                .forth{
+                    background-image: url('../images/project4.jpg');
+                }
+                .fifth{
+                    background-image: url('../images/project5.jpg');
+                }
+                .sixth{
+                    background-image: url('../images/project6.jpg');
+                }
+            }
+        }
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 568px) {  
+    #projects{
+        .projectList{
+            .row{
+                .projectHolder{
+    
+                    .projectCard{
+                        height: 70vh;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+    #projects{
+        .projectList{
+            .row{
+                .projectHolder{
+    
+                    .projectCard{
+                        height: 50vh;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    #projects{
+        .projectList{
+            .row{
+                .projectHolder{
+    
+                    .projectCard{
+                        height: 70vh;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    #projects{
+        .projectList{
+            .row{
+                .projectHolder{
+    
+                    .projectCard{
+                        height: 80vh;
+                    }
+                }
+            }
+        }
+    }
+}
